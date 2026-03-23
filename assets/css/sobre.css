@@ -1,0 +1,37 @@
+.container {
+  padding: 20px;
+  background-color: var(--bg-color2);
+  border-radius: 10px;
+  margin: 20px;
+  justify-content: start;
+}
+
+.container div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+/* Estilos para a lista (ol) e itens de lista (li), com ideia de separar os assuntos em tópicos e leitura */
+ol {
+  list-style-type: circle; /* Utilizar circulos como marcadores de tópicos*/
+  margin-left: 15px; /* Adiciona uma margem à lista */
+}
+
+li {
+  margin-bottom: 20px; /* Espaçamento entre itens */
+}
+
+main p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--text-color2);
+  font-size: 24px;
+}

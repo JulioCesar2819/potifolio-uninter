@@ -1,0 +1,95 @@
+main.container {
+  width: 70%;
+  margin: auto;
+}
+
+/* Estilização para as infromações que */
+#perfil-container {
+  position: relative;
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+  height: 20rem;
+}
+
+#perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+}
+
+#perfil span,
+#perfil span {
+  text-align: end;
+  color: #52525b;
+  fill: #52525b;
+}
+
+/* Estilização para o meu nome */
+#name {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#perfil-container p#bio {
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 0.2rem solid var(--bg-color2);
+  margin: 2rem 0;
+}
+
+#perfil-container p {
+  background: var(--bg-color2);
+  padding: 1rem;
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
+  text-align: center;
+}
+
+#perfil-container p a:hover {
+  color: var(--secondary-color);
+}
+
+/* Estilização e leve animações para deixar mais dinâmico */
+.social-links {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.social-link {
+  background: var(--bg-color2);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link,
+.social-link svg {
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: var(--text-color2);
+  fill: var(--text-color2);
+}
+
+.social-link:hover,
+.social-link:hover svg {
+  color: var(--text-color);
+  fill: var(--text-color);
+  text-decoration: underline;
+}
+
+@media (max-width: 798px) {
+  main.container {
+    width: 90%;
+  }
+}

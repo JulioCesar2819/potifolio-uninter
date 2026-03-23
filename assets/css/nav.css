@@ -1,0 +1,58 @@
+/* Estilização para o menu de navegação no topo do site */
+header {
+  background: #121213;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Estilização a logo */
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo:hover {
+  opacity: 75%;
+  transition: .2s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  position: relative; /* Para posicionar o elemento filho, vulgo o retangulo*/
+}
+
+/* Estilização para o retangulo, com intenção de expandir ao se passar o mouse */
+nav a::after {
+  content: "";
+  position: absolute;
+  opacity: 50%;
+  bottom: 0px; 
+  left: -5px;
+  width: 2px; 
+  height: 24px; 
+  background-color: #274f7a;
+  transition: width 0.3s; 
+}
+
+/* Estilização do retangulo quando se passar o mouse */
+nav a:hover::after {
+  width: 115%;
+}
